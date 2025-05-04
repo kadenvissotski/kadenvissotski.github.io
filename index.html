@@ -7,30 +7,37 @@
     <title>Kaden Vissotski Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
     <header class="bg-dark text-white py-3">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <h1 class="m-0">Kaden Vissotski</h1>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#resume">Resume</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#artifacts">Artifacts</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            </ul>
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Kaden Vissotski</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user-graduate me-1"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume"><i class="fas fa-file-alt me-1"></i> Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#artifacts"><i class="fas fa-flask me-1"></i> Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main class="container py-4">
         <section id="about" class="mb-5">
             <div class="row align-items-center">
-                <div class="col-md-4 text-center">
+                <div class="col-md-6 text-center">
                     <img src="kaden.jpg" alt="Kaden Vissotski" class="img-fluid rounded shadow">
                 </div>
-                <div class="col-md-8">
-                    <h2>About Me</h2>
+                <div class="col-md-6">
+                    <h1>Kaden Vissotski</h1>
+                    <h2>BSU Student – VR & Interactive Media Developer</h2>
                     <p>
                         I’m a student at Boise State University studying Games, Interactive Media, and Mobile Technologies.
                         My interests revolve around VR development, Unity coding, 3D modeling, and creating immersive experiences.
@@ -41,7 +48,7 @@
         </section>
 
         <section id="resume" class="mb-5">
-            <h2 class="mb-4">Resume</h2>
+            <h2><i class="fas fa-file-alt me-2"></i>Resume</h2>
             <div class="mb-4">
                 <h4>Education</h4>
                 <p><strong>Boise State University</strong> – Bachelor of Science in Games, Interactive Media, and Mobile Technologies (2021 - Expected 2026)</p>
@@ -66,7 +73,7 @@
         </section>
 
         <section id="artifacts">
-            <h2 class="mb-4">Artifacts</h2>
+            <h2><i class="fas fa-flask me-2"></i>Artifacts</h2>
             <div class="row g-4">
                 <!-- Dungeon Delver VR Artifact Card -->
                 <div class="col-md-6">
@@ -106,16 +113,38 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section id="contact" class="mt-5">
-            <h2>Contact</h2>
+            <h2><i class="fas fa-envelope me-2"></i>Contact</h2>
             <p>Email: <a href="mailto:kadenvissotski@gmail.com">kadenvissotski@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/kadenvissotski/" target="_blank">Kaden Vissotski</a></p>
         </section>
     </main>
+
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-3 mb-3">
+                    <h6>About</h6>
+                    <p>BSU student focusing on VR, AR, and web development.</p>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h6>Skills</h6>
+                    <p>C#, JavaScript, Unity, MySQL</p>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h6>Social</h6>
+                    <p><a href="https://www.linkedin.com/in/kadenvissotski/" class="text-white">LinkedIn</a></p>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h6>Contact</h6>
+                    <p><a href="mailto:kadenvissotski@gmail.com" class="text-white">Email Me</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
