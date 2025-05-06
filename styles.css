@@ -1,56 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 
 :root {
-    --cream: #F2EFE7;
-    --blue-light: #9ACBD0;
-    --blue-mid: #48A6A7;
-    --blue-dark: #006A71;
+    --primary-dark: #162521; /* Very dark greenish-blue */
+    --primary-mid: #3C474B; /* Dark grayish-blue */
+    --primary-light: #4F7CAC; /* Medium blue */
+    --accent-light: #C0E0DE; /* Light teal */
+    --accent-bright: #9EEFE5; /* Bright teal */
 }
 
 body {
-    background-color: var(--cream);
+    background-color: var(--accent-light); /* Light teal background */
     font-family: 'Rubik', sans-serif;
-    color: var(--blue-dark);
+    color: var(--primary-dark); /* Text color */
+    font-size: 16px;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h4, h5 {
-    color: var(--blue-mid);
+    color: var(--primary-light); /* Medium blue for headings */
     font-weight: 700;
 }
 
 .nav-link {
+    color: var(--primary-mid); /* Dark grayish-blue for nav links */
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--blue-light);
+    color: var(--accent-bright); /* Bright teal on hover */
     text-decoration: underline;
 }
 
 header {
+    background-color: var(--primary-dark); /* Very dark greenish-blue for header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1030;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
 section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--blue-light);
-    background-color: #ffffffdd;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid var(--primary-mid); /* Dark grayish-blue border */
+    background-color: var(--accent-light); /* Light teal background for sections */
     border-radius: 8px;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 10px rgba(0, 106, 113, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .card {
@@ -58,6 +55,7 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    background-color: var(--accent-bright); /* Bright teal for cards */
 }
 
 .card:hover {
@@ -65,21 +63,31 @@ section {
 }
 
 .card-title {
-    color: var(--blue-dark);
+    color: var(--primary-dark); /* Very dark greenish-blue for card titles */
     font-size: 1.25rem;
 }
 
 .card-text {
     font-size: 0.95rem;
-    color: #333;
+    color: var(--primary-mid); /* Dark grayish-blue for card text */
+}
+
+footer {
+    background-color: var(--primary-dark); /* Very dark greenish-blue for footer */
+    color: var(--accent-light); /* Light teal for footer text */
 }
 
 .btn-primary {
-    background-color: var(--blue-mid);
+    background-color: var(--primary-light); /* Medium blue for buttons */
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: var(--blue-light);
-    color: #fff;
+    background-color: var(--accent-bright); /* Bright teal on hover */
+    color: var(--primary-dark); /* Dark text on hover */
+}
+
+img {
+    width: 200px;
+    height: auto;
 }
